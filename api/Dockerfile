@@ -21,7 +21,7 @@ COPY . .
 RUN composer install --no-dev --optimize-autoloader
 
 # Expose the port the app runs on
-EXPOSE 9000
+EXPOSE 3306
 
 # Start the PHP FastCGI Process Manager
 CMD ["php-fpm"]
